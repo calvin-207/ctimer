@@ -1,0 +1,12 @@
+{application, ctime,
+ [
+  {description, "timer server"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, {ctime_app, [ctime, ctime_app, ctime_sup, ctime_server]}},
+  {env, []}
+ ]}.
